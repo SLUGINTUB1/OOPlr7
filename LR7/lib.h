@@ -153,6 +153,12 @@ public:
         result *= scalar;
         return result;
     }
+    bool operator>(const Mark& other) const {
+        return this->value > other.value;
+    }
+    bool operator<(const Mark& other) const {
+        return this->value < other.value;
+    }
 };
 
 class Exam : public Entrance_exams {
